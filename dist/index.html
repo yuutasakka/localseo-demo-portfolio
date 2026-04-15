@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ローカルSEOエリアページ制作｜サンプルサイト一覧｜Mori Digital</title>
+<meta name="description" content="出張型サービス業向けのローカルSEOエリアページ制作サービス。鍵屋・ハウスクリーニング・出張買取の3業種のサンプルサイトをご覧いただけます。1ページ¥500〜、50ページ¥25,000〜。">
+<meta name="robots" content="noindex">
+<style>
+:root{--ink:#1a1a1a;--muted:#6b6b6b;--brand:#0b5cff;--accent:#ffb020;--bg:#f7f9fc;--line:#e3e8ef;}
+*{box-sizing:border-box;min-width:0}
+html,body{overflow-x:hidden}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;color:var(--ink);background:#fff;line-height:1.85;font-size:15px;word-break:break-word}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(135deg,#0b5cff,#1e3a8a);color:#fff;padding:40px 0 46px}
+header .tag{display:inline-block;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px;font-size:12px;margin-bottom:14px;letter-spacing:.05em}
+header h1{font-size:28px;margin:0 0 14px;line-height:1.5}
+header .lead{font-size:15px;opacity:.92;line-height:1.85;margin:0 0 18px}
+header .meta{font-size:13px;opacity:.85}
+section{padding:36px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:22px;margin:0 0 8px;line-height:1.45}
+section .h2sub{color:var(--muted);font-size:13px;margin-bottom:20px}
+.sampleGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.sample{border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;background:#fff;transition:.2s}
+.sample:hover{border-color:var(--brand);box-shadow:0 8px 24px rgba(11,92,255,.1);transform:translateY(-2px)}
+.sampleHd{padding:14px 16px;border-bottom:1px solid var(--line)}
+.sampleIc{font-size:28px;margin-bottom:6px}
+.sampleName{font-size:17px;font-weight:700;margin:0 0 4px;color:var(--ink)}
+.sampleIndustry{font-size:12px;color:var(--muted)}
+.sampleBody{padding:14px 16px;flex:1;font-size:13px;color:#333;line-height:1.8}
+.sampleBody ul{padding-left:18px;margin:8px 0}
+.sampleBody li{margin-bottom:2px}
+.sampleFt{padding:12px 16px;border-top:1px solid var(--line);background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.sampleBtn{display:block;text-align:center;padding:11px;background:var(--brand);color:#fff;border-radius:6px;font-weight:700;font-size:13px}
+.sampleBtn:hover{background:#0847c7;text-decoration:none;color:#fff}
+.sampleBtn.sub{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+.sampleBtn.sub:hover{background:var(--bg)}
+.priceGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:14px 0}
+.priceCard{border:1px solid var(--line);border-radius:8px;padding:14px 10px;text-align:center;background:var(--bg)}
+.priceCard .n{font-size:12px;color:var(--muted)}
+.priceCard .p{font-size:20px;font-weight:700;color:var(--brand);margin:4px 0}
+.priceCard .sub{font-size:11px;color:var(--muted)}
+.featureGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0}
+.feature{background:var(--bg);padding:16px;border-radius:8px}
+.feature .fic{font-size:22px}
+.feature h3{font-size:15px;margin:8px 0 6px}
+.feature p{font-size:13px;color:#444;margin:0;line-height:1.75}
+.stepList{counter-reset:st;padding-left:0;list-style:none}
+.stepList li{counter-increment:st;padding:10px 0 10px 44px;position:relative;border-bottom:1px dashed var(--line);font-size:14px}
+.stepList li::before{content:counter(st);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+.cta{background:linear-gradient(135deg,#0b5cff,#1e3a8a);color:#fff;padding:28px 20px;border-radius:14px;margin:20px 0;text-align:center}
+.cta h2{font-size:20px;margin:0 0 8px;color:#fff;border:0}
+.cta p{font-size:14px;opacity:.92;margin:0 0 18px}
+.cta a{display:inline-block;background:var(--accent);color:#3a2400;padding:12px 28px;border-radius:40px;font-weight:700;font-size:14px}
+.cta a:hover{text-decoration:none;opacity:.9}
+footer{background:#1a1a1a;color:#9aa0a8;padding:24px 0;font-size:12px;text-align:center}
+footer a{color:#ccc}
+.note{background:#fff8e1;border-left:3px solid var(--accent);padding:12px 14px;border-radius:4px;font-size:13px;margin:14px 0}
+@media(max-width:640px){
+  header{padding:30px 0 34px}
+  header h1{font-size:21px}
+  section{padding:26px 0}
+  section h2{font-size:18px}
+  .sampleGrid{grid-template-columns:1fr}
+  .cta{padding:22px 16px}.cta h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="tag">LOCAL SEO / AREA PAGE PRODUCTION</div>
+    <h1>出張型サービスのための<br>ローカルSEOエリアページ制作</h1>
+    <p class="lead">「〇〇市 鍵屋」「〇〇区 ハウスクリーニング」——地域名で検索したとき、個別ページが無いために競合に負けているサイトが多くあります。当サービスでは、1ページ¥500で市区町村ごとの最適化ページを量産し、ローカル検索からの流入を根本から改善します。</p>
+    <div class="meta">Produced by Mori Digital — <a href="mailto:info@morimorida.com" style="color:#ffd76a">info@morimorida.com</a></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h2>3業種のサンプルサイト</h2>
+  <div class="h2sub">いずれも東京23区（23ページ）＋ 多摩地域（12ページ）＝ 共通ページ含め計42ページで構成した実働デモです。</div>
+
+  <div class="sampleGrid">
+
+    <div class="sample">
+      <div class="sampleHd">
+        <div class="sampleIc">🔑</div>
+        <div class="sampleName">カギの松本商会</div>
+        <div class="sampleIndustry">鍵屋（24時間出張）</div>
+      </div>
+      <div class="sampleBody">
+        赤×黒の視認性重視デザイン。深夜対応・緊急性訴求型。
+        <ul>
+          <li>35エリア個別ページ（鍵開け／交換／金庫）</li>
+          <li>料金表・作業事例・お客様の声</li>
+          <li>LocalBusiness構造化データ埋込み済み</li>
+        </ul>
+      </div>
+      <div class="sampleFt">
+        <a class="sampleBtn" href="https://localseo-demo-kagiya.pages.dev/" target="_blank" rel="noopener">トップページを見る →</a>
+        <a class="sampleBtn sub" href="https://localseo-demo-kagiya.pages.dev/area/shinjuku.html" target="_blank" rel="noopener">エリアページ例（新宿区）→</a>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sampleHd">
+        <div class="sampleIc">🧹</div>
+        <div class="sampleName">おそうじの杉浦</div>
+        <div class="sampleIndustry">ハウスクリーニング</div>
+      </div>
+      <div class="sampleBody">
+        グリーン基調で安心感重視。女性層・ファミリー層向け。
+        <ul>
+          <li>35エリア個別ページ（エアコン／水まわり／空室）</li>
+          <li>メニュー・料金詳細・ご利用の流れ</li>
+          <li>ペット可・女性スタッフ指名可バッジ</li>
+        </ul>
+      </div>
+      <div class="sampleFt">
+        <a class="sampleBtn" href="https://localseo-demo-cleaning.pages.dev/" target="_blank" rel="noopener">トップページを見る →</a>
+        <a class="sampleBtn sub" href="https://localseo-demo-cleaning.pages.dev/area/setagaya.html" target="_blank" rel="noopener">エリアページ例（世田谷区）→</a>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sampleHd">
+        <div class="sampleIc">🏺</div>
+        <div class="sampleName">出張買取 遠藤商店</div>
+        <div class="sampleIndustry">骨董・貴金属・時計・着物の出張買取</div>
+      </div>
+      <div class="sampleBody">
+        明朝体×金色アクセントの老舗風デザイン。年配層向け。
+        <ul>
+          <li>35エリア個別ページ（骨董／貴金属／時計／着物）</li>
+          <li>買取品目・参考価格・ご利用の流れ</li>
+          <li>創業昭和58年の老舗訴求</li>
+        </ul>
+      </div>
+      <div class="sampleFt">
+        <a class="sampleBtn" href="https://localseo-demo-kaitori.pages.dev/" target="_blank" rel="noopener">トップページを見る →</a>
+        <a class="sampleBtn sub" href="https://localseo-demo-kaitori.pages.dev/area/taito.html" target="_blank" rel="noopener">エリアページ例（台東区）→</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    いずれも実在の店舗ではなく、制作クオリティをご確認いただくためのデモサイトです。業種・地域・文言・デザインはすべて御社用にカスタマイズします。写真はプレースホルダーで実装していますが、実際の納品時には御社提供の写真に差し替えます。
+  </div>
+</section>
+
+<section>
+  <h2>なぜエリアページが効くのか</h2>
+  <div class="h2sub">Googleは「地域 × 業種」の検索に対し、その地域を明示的に扱ったページを優先表示します。</div>
+  <div class="featureGrid">
+    <div class="feature"><div class="fic">🔍</div><h3>ローカル検索の取りこぼし防止</h3><p>「世田谷区 鍵屋」「杉並区 ハウスクリーニング」などの検索で、対応エリアとして名前が入っているだけのサイトは上位表示されません。</p></div>
+    <div class="feature"><div class="fic">📈</div><h3>長期的なSEO資産</h3><p>一度公開したページは、広告と違って掲載費がかかりません。市区町村ごとにページが積み上がることで、じわじわと流入が増え続けます。</p></div>
+    <div class="feature"><div class="fic">📍</div><h3>構造化データで信頼性アップ</h3><p>各ページにLocalBusinessスキーマを埋め込むことで、検索結果にリッチな情報が表示されやすくなります。</p></div>
+    <div class="feature"><div class="fic">📱</div><h3>モバイル最適化済み</h3><p>スマホからの緊急依頼を想定した、固定電話ボタン・タップ一発発信に対応した設計です。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>料金プラン</h2>
+  <div class="h2sub">1市区町村ページあたり¥500。ページ数に応じた明朗会計です。</div>
+  <div class="priceGrid">
+    <div class="priceCard"><div class="n">50ページ</div><div class="p">¥25,000</div><div class="sub">東京23区＋主要市</div></div>
+    <div class="priceCard"><div class="n">100ページ</div><div class="p">¥50,000</div><div class="sub">都内・近郊網羅</div></div>
+    <div class="priceCard"><div class="n">300ページ</div><div class="p">¥150,000</div><div class="sub">関東全域</div></div>
+    <div class="priceCard"><div class="n">600ページ</div><div class="p">¥300,000</div><div class="sub">全国対応</div></div>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">※料金には以下を全て含みます：タイトル・メタディスクリプション最適化／構造化データ埋込／内部リンク設計／sitemap.xml生成／Cloudflare Pagesへのデプロイ作業。</p>
+</section>
+
+<section>
+  <h2>ご依頼からの流れ</h2>
+  <ol class="stepList">
+    <li><strong>ヒアリング（無料）</strong>　業種・対象エリア・既存サイトの状況・競合についてお話を伺います。オンライン30分〜。</li>
+    <li><strong>お見積り・ご契約</strong>　エリア数・デザイン方針を確定し、正式お見積りをお出しします。</li>
+    <li><strong>素材のご提供</strong>　会社概要・料金・お客様の声・写真など、素材をお預かりします（テンプレ提供可）。</li>
+    <li><strong>制作（2〜4週間）</strong>　テンプレートを御社仕様にカスタマイズし、エリアページを一括生成します。</li>
+    <li><strong>ご確認・修正</strong>　プレビューURLをお渡しし、文言・デザインを調整します。</li>
+    <li><strong>公開・Search Console登録</strong>　本番公開後、Search Consoleへのsitemap登録までサポートします。</li>
+  </ol>
+</section>
+
+<div class="cta">
+  <h2>まずは貴社サイトの無料診断から</h2>
+  <p>「どのくらいのページ数が必要か」「現状のSEOスコアはどうか」を無料でチェックします。</p>
+  <a href="mailto:info@morimorida.com?subject=ローカルSEOエリアページ制作のお問い合わせ">📧 メールで相談する</a>
+</div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    Mori Digital — Local SEO Area Page Production<br>
+    <a href="mailto:info@morimorida.com">info@morimorida.com</a>
+  </div>
+</footer>
+</body>
+</html>
